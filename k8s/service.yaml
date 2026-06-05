@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260606-014614-3u1qj11e3fxc-service
+spec:
+  selector:
+    app: enterprise-system-20260606-014614-3u1qj11e3fxc
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
